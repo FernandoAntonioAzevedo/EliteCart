@@ -11,6 +11,7 @@
     />    
 
     <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <!--=============== NICE SELECT CSS ===============-->
     <link rel="stylesheet" href="assets/css/nice-select2.css">
@@ -103,12 +104,77 @@
           <i class="ri-shopping-cart-line"></i>
         </a>
       </div>
-    </div>    
+    </div>
+    
+    <!--=============== NAV BAR ===============-->
+    <nav class="navbar" container>
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="shop.html" class="navbar-link">Shop</a>
+        </li>
+        <li class="navbar-item">
+          <a href="account.html" class="navbar-link">My Account</a>
+        </li>
+        <li class="navbar-item">
+          <a href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="navbar-contact">
+        <img src="assets/img/call.svg" alt="" class="navbar-icon">
+        <a href="tel: +88-325-662-180" class="navbar-call-link">+88-325-662-180</a>
+      </div>
+    </nav>
+
     </header>
 
     <!--=============== MAIN ===============-->
-
+    <main class="man">
     <!--=============== HOME ===============-->
+    <section class="">
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide" style="background: url(./assets/img/home-img-1.jpg)">
+            <div class="container">
+              <div class="home-tag">
+                <img src="assets/img/bolt.svg" alt="" class="home-img">Top Trending
+              </div>
+
+              <h1 class="home-title">Classic Elegant Style Women</h1>
+              <p class="home-description">
+                Discover timeless elegance and modern sophistication with our curated
+                collection of women's fashion.
+              </p>
+
+              <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide" style="background: url(./assets/img/home-img-2.jpg)">
+            <div class="container">
+              <div class="home-tag">
+                <img src="assets/img/bolt.svg" alt="" class="home-img">Top Trending
+              </div>
+
+              <h1 class="home-title" style="color: var(--white-color)">Classic Elegant Style Women</h1>
+              <p class="home-description" style="color: var(--white-color)">
+                Discover timeless elegance and modern sophistication with our curated
+                collection of women's fashion.
+              </p>
+
+              <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <!--=============== PRODUCTS ===============-->
 
@@ -121,17 +187,22 @@
     <!--=============== CATEGORY ===============-->
 
     <!--=============== NEWSLETTER ===============-->
+    </main>
 
     <!--=============== FOOTER ===============-->
 
     <!--=============== SCROLL UP ===============-->
 
     <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--=============== NICE SELECT JS ===============-->
     <script src="assets/js/nice-select2.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== HOME JS ===============-->
+    <script src="assets/js/home.js"></script>
   </body>
 </html>
