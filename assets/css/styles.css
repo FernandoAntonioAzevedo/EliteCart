@@ -153,6 +153,11 @@ img {
     padding-inline: 1.25rem;
 }
 
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
 /*=============== HEADER ===============*/
 .header {
     margin-bottom: 1rem;
@@ -534,6 +539,35 @@ img {
 }
 
 /*=============== CATEGORIES ===============*/
+.categories-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-view {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--title-color);
+}
+
+.categories-container,
+.categories-items {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.categories-items .categories-item:first-child {
+    grid-column: 1/-1;
+}
+
+.categories-item {
+    position: relative;
+}
+
+.categories-img {
+    width: 100%;
+}
 
 /*=============== FEATURES ===============*/
 
