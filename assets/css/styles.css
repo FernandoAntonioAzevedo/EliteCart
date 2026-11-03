@@ -569,9 +569,139 @@ img {
     width: 100%;
 }
 
+.categories-data {
+    position: absolute;
+    inset: 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-title {
+    text-transform: uppercase;
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.categories-description {
+    max-width: 250px;
+}
+
+.mt-auto  {
+    margin-top: auto;
+}
+
+.categories-list {
+    row-gap: 1rem;
+}
+
+.categories-link {
+    border: 1px solid var(--border-color);
+    width: 46%;
+    padding: 0.65rem 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.categories-link:hover {
+    background-color: var(--white-color);
+    border-color: var(--first-color);
+    color: var(--first-color);
+}
+
+.categories-icon {
+    background-color: var(--white-color);
+    width: 48px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: var(--title-color);
+    display: grid;
+    place-items: center;
+    transform: rotate(327deg);
+    transition: all 0.3s ease;
+}
+
+.categories-icon:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    transform: rotate(0deg);
+}
+
+.categories-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0.25rem;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    width: 85%;
+    padding: 0.625rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: var(--weight-500);
+    transition: all 0.3s ease;
+}
+
+.categories-btn:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
 /*=============== FEATURES ===============*/
+.features {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.features-item {
+    display: flex;
+    align-items: start;
+    column-gap: 1.25rem;
+}
+
+.features-title {
+    font-size: var(--larger-font-size);
+    margin-bottom: 0.625rem;
+}
 
 /*=============== PRODUCTS ===============*/
+.product-elevate {
+    grid-template-columns:  4fr 7fr 1fr;
+    align-items: center;
+}
+
+.product-elevate-swiper {
+    width: 92%;
+    margin-inline: initial;
+}
+
+.product-elevate-swiper .swiper-pagination.swiper-pagination-horizontal {
+    bottom: 1rem;
+}
+
+.product-elevate-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-elevate-container .product-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+}
+
+.product-top {
+    position: relative;
+}
+
+.product-style {
+    background-color: hsla(var(--hue), 0%, 100%, 0.9);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
 /*=============== CATEGORY ===============*/
 

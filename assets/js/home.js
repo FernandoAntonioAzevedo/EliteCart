@@ -14,3 +14,9 @@ var homeSwiper = new Swiper('.product-swiper', {
 });
 
 /*=============== ELEVATE SWIPER ===============*/
+var homeSwiper = new Swiper('.product-elevate-container', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },      
+});
